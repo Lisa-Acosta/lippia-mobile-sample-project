@@ -22,7 +22,7 @@ public class LoginSteps extends PageSteps {
 
     @When("The user goes to the Sign Up page")
     public void goToSignUp() {
-        MobileActionManager.click(LoginConstants.SIGN_UP_BUTTON_LOCATOR);
+        LoginService.signUp();
     }
 
     @When("The user logs in the application with: (.*), (.*)")
@@ -30,4 +30,8 @@ public class LoginSteps extends PageSteps {
         LoginService.doLogin(email, password);
     }
 
+    @When("The user logs in the application with user and password")
+    public void theUserLogsInTheApplicationWithUserAndPassword() {
+        LoginService.doLogin();
+    }
 }

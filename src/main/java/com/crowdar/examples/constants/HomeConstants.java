@@ -8,4 +8,6 @@ public class HomeConstants {
     public static final String PHONE_INPUT_LOCATOR = "ACCESSIBILITY_ID:phoneInputHome";
 
     public static final String VIEW_NOT_DISPLAYED_MESSAGE = "Home page is not displayed.";
+    public static final String CHANGE_LANGUAGE_BUTTON_SPANISH = "XPATH://android.widget.TextView[@text='Cambiar " +
+            "idioma']";
 }

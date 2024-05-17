@@ -4,7 +4,15 @@
     <artifactId>Lippia-mobile-sample-project</artifactId>
     <url>https://maven.apache.org</url>
     <packaging>jar</packaging>
-    <name>Lippia-mobile-sample-project</name>
+    <developers>
+        <developer>
+            <id>LA</id>
+            <name>Lisa Acosta</name>
+            <email>lisa.acosta@gmail.com</email>
+            <url>https://github.com/Lisa-Acosta</url>
+        </developer>
+    </developers>
+    <name>Lippia-mobile-Practico 7</name>
     <version>1.0.0</version>
 
     <parent>
@@ -17,7 +25,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>dd-MM-yyyy-HH-mm-ss</maven.build.timestamp.format>
         <buildIdentifier>lippia_mobile_sample_project_${maven.build.timestamp}</buildIdentifier>
-        <crowdar.cucumber.filter>@Demo</crowdar.cucumber.filter>
+        <crowdar.cucumber.filter>@Regression</crowdar.cucumber.filter>
         <crowdar.driverHub></crowdar.driverHub>
         <crowdar.cucumber.plugins>--plugin pretty --plugin com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter: --plugin com.crowdar.examples.listeners.CucumberListener:</crowdar.cucumber.plugins>
         <test-manager-plugin>--plugin com.crowdar.examples.report.TestManager:</test-manager-plugin>
@@ -28,6 +36,7 @@
         <crowdar.extent.host.name>LocalMachine</crowdar.extent.host.name>
         <crowdar.extent.environment>Local</crowdar.extent.environment>
         <crowdar.extent.user.name>User.name</crowdar.extent.user.name>
+        <user.lippia>automation</user.lippia>
     </properties>
 
     <profiles>
@@ -41,7 +50,13 @@
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
                 <crowdar.avd>Pixel3</crowdar.avd>
                 <crowdar.appLocation>E:\\\\LIPPIA_MOBILE_AUTOMATION\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
-                <crowdar.deviceName>Pixel3</crowdar.deviceName>
+            </properties>
+        </profile>
+        <profile>
+            <id>Fisico</id>
+            <properties>
+                <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/androidCapabilitiesFisico.json</crowdar.projectType.driverCapabilities.jsonFile>
+                <crowdar.deviceName>SMA336M</crowdar.deviceName>
             </properties>
         </profile>
         <profile>
