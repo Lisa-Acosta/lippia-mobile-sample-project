@@ -1,11 +1,11 @@
-@Login @Regression
+@Login @Regression @Prueba
 Feature: Login
-  As a potential client i want to log to interact with the mobile application
+  As a potential client i want to log to interact with the mobile application of clockify
 
   @Smoke
   Scenario: Successfull login
     Given The app is loaded correctly
-    When The user logs in the application with user and password
+    When The user logs in the application with email and password
     Then Home page is displayed
 
 

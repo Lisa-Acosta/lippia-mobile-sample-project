@@ -30,8 +30,9 @@ public class LoginSteps extends PageSteps {
         LoginService.doLogin(email, password);
     }
 
-    @When("The user logs in the application with user and password")
+    @When("The user logs in the application with email and password")
     public void theUserLogsInTheApplicationWithUserAndPassword() {
         LoginService.doLogin();
     }
 }
+

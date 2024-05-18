@@ -2,6 +2,9 @@ package com.crowdar.examples.constants;
 
 public class HomeConstants {
 
+    public static final String TIME_ENTRIES_TEXTVIEW = "ACCESSIBILITY_ID:Time entries";
+    public static final String ADD_TIME_BUTTON = "ACCESSIBILITY_ID:Add time entry";
+
     public static final String SIGN_OUT_BUTTON_LOCATOR = "ACCESSIBILITY_ID:signOutButtonHome";
     public static final String CHANGE_LANGUAGE_BUTTON_LOCATOR = "ACCESSIBILITY_ID:changeLanguageButtonHome";
     public static final String CAMERA_BUTTON_LOCATOR = "ACCESSIBILITY_ID:cameraButtonHome";

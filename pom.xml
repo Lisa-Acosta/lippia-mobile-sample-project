@@ -12,7 +12,7 @@
             <url>https://github.com/Lisa-Acosta</url>
         </developer>
     </developers>
-    <name>Lippia-mobile-Practico 7</name>
+    <name>Lippia-mobile-Practico 8</name>
     <version>1.0.0</version>
 
     <parent>
@@ -24,7 +24,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>dd-MM-yyyy-HH-mm-ss</maven.build.timestamp.format>
-        <buildIdentifier>lippia_mobile_sample_project_${maven.build.timestamp}</buildIdentifier>
+        <buildIdentifier>Lippia_mobile_clockify_project_${maven.build.timestamp}</buildIdentifier>
         <crowdar.cucumber.filter>@Regression</crowdar.cucumber.filter>
         <crowdar.driverHub></crowdar.driverHub>
         <crowdar.cucumber.plugins>--plugin pretty --plugin com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter: --plugin com.crowdar.examples.listeners.CucumberListener:</crowdar.cucumber.plugins>
@@ -36,7 +36,6 @@
         <crowdar.extent.host.name>LocalMachine</crowdar.extent.host.name>
         <crowdar.extent.environment>Local</crowdar.extent.environment>
         <crowdar.extent.user.name>User.name</crowdar.extent.user.name>
-        <user.lippia>automation</user.lippia>
     </properties>
 
     <profiles>
@@ -49,7 +48,7 @@
                 <crowdar.driverHub>http://127.0.0.1:4723/</crowdar.driverHub>
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
                 <crowdar.avd>Pixel3</crowdar.avd>
-                <crowdar.appLocation>E:\\\\LIPPIA_MOBILE_AUTOMATION\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
+                <crowdar.appLocation>E:\\\\LIPPIA_MOBILE_AUTOMATION\\\\lippia-mobile-sample-project\\\\sample_apk\\\\Clockify.apk</crowdar.appLocation>
             </properties>
         </profile>
         <profile>
@@ -160,8 +159,8 @@
                         <TEST_MANAGER_PASSWORD>admin</TEST_MANAGER_PASSWORD>
                         <TEST_MANAGER_API_HOST>https://runs.demo.lippia.io</TEST_MANAGER_API_HOST>
                         <TEST_MANAGER_API_PORT></TEST_MANAGER_API_PORT>
-                        <TEST_MANAGER_RUN_NAME>Mobile Demo</TEST_MANAGER_RUN_NAME>
-                        <TEST_MANAGER_PROJECT_CODE>LIPDEM</TEST_MANAGER_PROJECT_CODE>
+                        <TEST_MANAGER_RUN_NAME>Mobile Clockify</TEST_MANAGER_RUN_NAME>
+                        <TEST_MANAGER_PROJECT_CODE>LIPCLO</TEST_MANAGER_PROJECT_CODE>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
