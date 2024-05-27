@@ -1,11 +1,11 @@
 package com.crowdar.examples.constants;
 
 public class LoginConstants {
-    public static final String LOGIN_HEADLINE = "ACCESSIBILITY_ID:Login headline";
-    public static final String EMAIL_INPUT = "xpath://android.widget.EditText[@resource-id=\"me.clockify.android:id/emailAddressInput\"]";
-    public static final String PASSWORD_INPUT = "xpath://android.widget.EditText[@resource-id=\"me.clockify.android:id/passwordInput\"]";
-    public static final String LOGIN_BUTTON = "xpath://android.widget.Button[@resource-id=\"me.clockify" +
-            ".android:id/loginButton\"]";
+    public static final String LOGIN_HEADLINE = "xpath://android.widget.TextView[@resource-id=\"titleContentHeaderText\"]";
+    public static final String INICIAR_MANUAL_BUTTON = "xpath://android.view.View[@resource-id=\"loginTypeSwitchOutlinedButton\"]";
+    public static final String EMAIL_INPUT = "xpath://android.widget.EditText[@resource-id=\"emailEditText\"]";
+    public static final String PASSWORD_INPUT = "xpath://android.widget.EditText[@resource-id=\"passwordEditText\"]";
+    public static final String LOGIN_BUTTON = "xpath://android.view.View[@resource-id=\"loginButtonButton\"]";
 
     public static final String VIEW_NOT_DISPLAYED_MESSAGE = "Login page is not displayed.";
 }

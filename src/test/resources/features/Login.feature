@@ -6,7 +6,7 @@ Feature: Login
   Scenario: Successfull login
     Given The app is loaded correctly
     When The user logs in the application with email and password
-    Then Login page is displayed
+    Then Home page is displayed
 
 
 
