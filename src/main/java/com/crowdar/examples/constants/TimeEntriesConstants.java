@@ -16,4 +16,16 @@ public class TimeEntriesConstants {
     public static final String FACTURABLE_BUTTON = "xpath://android.view.View[@resource-id=\"Switch\"]";
     public static final String GUARDAR_BUTTON = "xpath://android.view.View[@resource-id=\"saveFabButton\"]/android.widget.Button";
 
+
+    public static final String TASK_BUTTON = "xpath://android.view.View[@resource-id=\"taskItemRoot\"]";
+    public static final String BACK_BUTTON = "xpath://android.view.View[@resource-id=\"backIcon\"]/android" +
+            ".widget.Button";
+    public static final String NEW_TASK_BUTTON = "xpath://android.view.View[@resource-id=\"createButton\"]/android.widget.Button";
+    public static final String ADD_TASK_INPUT = "xpath://android.widget.EditText[@resource-id=\"dialogTextField\"]";
+
+    public static final String ADD_TASK_BUTTON = "xpath://android.view.View[@resource-id=\"positiveButton\"]/android.widget.Button";
+    public static final String TAGS_BUTTON = "xpath://android.view.View[@resource-id=\"tagsItemRoot\"]";
+    public static final String TAGS_CHECKBOX = "xpath://android.widget.CheckBox[@resource-id=\"tagCheckbox\"]";
+
+
 }

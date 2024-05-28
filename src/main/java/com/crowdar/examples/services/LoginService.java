@@ -24,6 +24,6 @@ public class LoginService {
     public static void isViewLoaded(){
         MobileActionManager.waitVisibility(LoginConstants.LOGIN_HEADLINE);
         click(LoginConstants.INICIAR_MANUAL_BUTTON);
-        //Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.EMAIL_INPUT),LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
+        Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.EMAIL_INPUT),LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
     }
 }

@@ -14,4 +14,5 @@ public class HomeConstants {
     public static final String TIME_ENTRIES_PROJECT_NAME = "xpath:(//android.widget" +
             ".TextView[@resource-id=\"titleCardPart1\"])[1]";
 
+    public static final String TIME_ENTRIES_TASK_NAME = "xpath://android.widget.TextView[@resource-id=\"titleCardPart2\"]";
 }

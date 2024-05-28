@@ -39,9 +39,24 @@ public class TimeEntriesService {
         click(TimeEntriesConstants.GUARDAR_BUTTON);
     }
 
-    public static void dataEntriesDisplayed(String project) {
+    public static void dataEntriesDisplayed(String project, String task) {
         click(HomeConstants.MSG_NOTIFICATIONS2);
         waitVisibility(HomeConstants.CONTADOR_TEXTVIEW);
         Assert.assertTrue(ActionManager.getText(HomeConstants.TIME_ENTRIES_PROJECT_NAME).contains(project));
+        Assert.assertTrue(ActionManager.getText(HomeConstants.TIME_ENTRIES_TASK_NAME).contains(task));
+    }
+
+    public static void enterTask(String task) {
+        click(TimeEntriesConstants.TASK_BUTTON);
+        click(TimeEntriesConstants.NEW_TASK_BUTTON);
+        setInput(TimeEntriesConstants.ADD_TASK_INPUT, task);
+        click(TimeEntriesConstants.ADD_TASK_BUTTON);
+
+    }
+
+    public static void enterTag(String tag) {
+        click(TimeEntriesConstants.TAGS_BUTTON);
+        click(TimeEntriesConstants.TAGS_CHECKBOX);
+        click(TimeEntriesConstants.BACK_BUTTON);
     }
 }

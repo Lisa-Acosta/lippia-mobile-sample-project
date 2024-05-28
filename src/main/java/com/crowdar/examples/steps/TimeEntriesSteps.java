@@ -21,7 +21,7 @@ public class TimeEntriesSteps extends PageSteps {
         TimeEntriesService.enterWorking(working);
     }
 
-    @And("^enter de project (.*)$")
+    @And("^enter the project (.*)$")
     public void enterDeProject(String project) {
         TimeEntriesService.enterProject(project);
     }
@@ -31,13 +31,23 @@ public class TimeEntriesSteps extends PageSteps {
         TimeEntriesService.enterBillablepro(billablepro);
     }
 
-    @Then("^the data entries (.*) is diplayed$")
-    public void theDataEntriesIsDiplayed(String project) {
-        TimeEntriesService.dataEntriesDisplayed(project);
+    @Then("^the data entries (.*) and (.*) is diplayed$")
+    public void theDataEntriesIsDiplayed(String project, String task) {
+        TimeEntriesService.dataEntriesDisplayed(project, task);
     }
 
     @When("^enter duration time (.*)$")
     public void enterDurationTime(String time) {
         TimeEntriesService.enterTime(time);
+    }
+
+    @And("^enter the task (.*)$")
+    public void enterTheTask(String task) {
+        TimeEntriesService.enterTask(task);
+    }
+
+    @And("^enter the tag (.*)$")
+    public void enterTheTag(String tag) {
+        TimeEntriesService.enterTag(tag);
     }
 }

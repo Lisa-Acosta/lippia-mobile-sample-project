@@ -8,13 +8,15 @@ Feature: Time Entries
   Scenario Outline: Time Entries successfull
     When enter duration time <time>
     And choose the working <working> on
-    And enter de project <project>
+    And enter the project <project>
+    And enter the task <task>
+    And enter the tag <tag>
     And choose if it is billablepro <billablepro>
-    Then the data entries <project> is diplayed
+    Then the data entries <project> and <task> is diplayed
 
     Examples:
-      | time | working | project              | billablepro |
-      | 7:15 | TP8     | Api Low Code Project | false       |
+      | time | working | project              | task   | tag      | billablepro |
+      | 7:15 | TP8     | Api Low Code Project | mobile | clockify | false       |
 
 
 
