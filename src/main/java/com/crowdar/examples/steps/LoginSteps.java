@@ -28,5 +28,10 @@ public class LoginSteps extends PageSteps {
     public void theUserLogsInTheApplicationWithUserAndPassword() {
         LoginService.doLogin();
     }
+
+    @Then("the login is diplayed")
+    public void theLoginIsDiplayed() {
+        LoginService.isViewLoaded();
+    }
 }
 

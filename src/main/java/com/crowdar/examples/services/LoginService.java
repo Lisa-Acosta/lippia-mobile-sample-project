@@ -1,12 +1,10 @@
 package com.crowdar.examples.services;
-
 import com.crowdar.core.PropertyManager;
 import com.crowdar.core.actions.MobileActionManager;
+import com.crowdar.examples.constants.HomeConstants;
 import com.crowdar.examples.constants.LoginConstants;
 import org.testng.Assert;
-
 import static com.crowdar.core.actions.ActionManager.click;
-
 
 public class LoginService {
 
@@ -20,10 +18,13 @@ public class LoginService {
         MobileActionManager.setInput(LoginConstants.PASSWORD_INPUT, password);
         click(LoginConstants.LOGIN_BUTTON);
     }
-
     public static void isViewLoaded(){
         MobileActionManager.waitVisibility(LoginConstants.LOGIN_HEADLINE);
         click(LoginConstants.INICIAR_MANUAL_BUTTON);
         Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.EMAIL_INPUT),LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
+    }
+    public static void selectLogout() {
+        click(HomeConstants.LOG_OUT_LINK);
+        click(HomeConstants.LOG_OUT_CONFIRM_BUTTON);
     }
 }
